@@ -1,12 +1,74 @@
-# React + Vite
+# Guía de Instalación del Proyecto
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Requisitos Previos
+- Node.js (versión 16 o superior)
+- npm o yarn
 
-Currently, two official plugins are available:
+## Proceso de Instalación
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 1. Crear el Proyecto
+Ejecuta el siguiente comando para crear un nuevo proyecto con Vite:
 
-## Expanding the ESLint configuration
+```bash
+npm create vite@latest
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Durante la configuración, se te pedirá definir:
+- **Nombre del proyecto**: Ingresa el nombre que desees para tu proyecto
+- **Nombre del paquete**: Confirma o modifica el nombre del paquete
+- **Framework**: Selecciona **React**
+- **Lenguaje**: Selecciona **JavaScript**
+
+### 2. Instalar Dependencias
+Navega al directorio del proyecto e instala las dependencias:
+
+```bash
+cd nombre-del-proyecto
+npm install
+```
+
+### 3. Iniciar el Servidor de Desarrollo
+Para ejecutar el proyecto en modo desarrollo:
+
+```bash
+npm run dev
+```
+
+El servidor se iniciará por defecto en `http://localhost:5173`
+
+### 4. Instalar Bootstrap (Opcional)
+Si necesitas Bootstrap en tu proyecto, instala las dependencias adicionales:
+
+```bash
+npm install bootstrap @popperjs/core
+```
+
+## Comandos Disponibles
+
+- `npm run dev` - Inicia el servidor de desarrollo
+- `npm run build` - Construye el proyecto para producción
+- `npm run preview` - Previsualiza la build de producción
+- `npm run lint` - Ejecuta el linter (si está configurado)
+
+## Estructura del Proyecto
+
+```
+nombre-del-proyecto/
+├── public/
+├── src/
+│   ├── components/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── package.json
+└── vite.config.js
+```
+
+## Próximos Pasos
+
+1. Personaliza el archivo `src/App.jsx` con tu contenido
+2. Añade tus componentes en la carpeta `src/components/`
+3. Configura las rutas si es necesario
+4. Personaliza los estilos en los archivos CSS
+
+¡Tu proyecto está listo para comenzar el desarrollo!
